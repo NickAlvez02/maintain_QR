@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "489695129425",
+    "project_id": "practica13firebase",
+    "storage_bucket": "practica13firebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489695129425:android:ddaf9bda9fed860bedad70",
+        "android_client_info": {
+          "package_name": "com.example.practica13firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489695129425-dfbo70lg785metn7jp4qcailprueueve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK1KrqxLbRKtnAl-we_cG7CqNtjZ5mPEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489695129425-dfbo70lg785metn7jp4qcailprueueve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489695129425:android:2ed1dbdb596823b0edad70",
+        "android_client_info": {
+          "package_name": "com.techapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489695129425-dfbo70lg785metn7jp4qcailprueueve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK1KrqxLbRKtnAl-we_cG7CqNtjZ5mPEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489695129425-dfbo70lg785metn7jp4qcailprueueve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

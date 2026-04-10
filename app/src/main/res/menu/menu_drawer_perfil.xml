@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_perfil_mi_perfil"
+            android:title="Mi perfil"
+            android:icon="@android:drawable/ic_menu_edit" />
+
+        <item
+            android:id="@+id/menu_perfil_configuracion"
+            android:title="Configuración"
+            android:icon="@android:drawable/ic_menu_preferences" />
+    </group>
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Cerrar sesión"
+        android:icon="@android:drawable/ic_lock_power_off" />
+
+</menu>

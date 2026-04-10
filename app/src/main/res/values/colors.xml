@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Paleta principal (Basada en mockup) ──────────── -->
+    <color name="bg_primary">#F8FAFC</color>
+    <color name="bg_dashboard">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F1F5F9</color>
+    <color name="divider">#E2E8F0</color>
+
+    <!-- Accent: MaintainQR Blue -->
+    <color name="accent">#1E40AF</color>
+    <color name="accent_light">#3B82F6</color>
+    <color name="accent_dark">#1E3A8A</color>
+    <color name="accent_alpha">#4D3B82F6</color>
+
+    <!-- Dashboard Cards -->
+    <color name="card_pendientes">#F59E0B</color>
+    <color name="card_en_proceso">#3B82F6</color>
+    <color name="card_finalizadas">#10B981</color>
+    <color name="card_en_espera">#B45309</color>
+    <color name="card_canceladas">#EF4444</color>
+
+
+    <!-- Textos -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- ── Estados de orden (Colores de fondo y texto) ──────── -->
+    <color name="estado_pendiente_bg">#FFF7ED</color>
+    <color name="estado_pendiente_text">#F59E0B</color>
+    <color name="estado_diagnostico_bg">#EFF6FF</color>
+    <color name="estado_diagnostico_text">#3B82F6</color>
+    <color name="estado_reparacion_bg">#F5F3FF</color>
+    <color name="estado_reparacion_text">#8B5CF6</color>
+    <color name="estado_finalizado_bg">#ECFDF5</color>
+    <color name="estado_finalizado_text">#10B981</color>
+    <color name="estado_default_bg">#F1F5F9</color>
+    <color name="estado_default_text">#64748B</color>
+
+    <!-- ── Estados de orden (Mockup) ─────────────────────────── -->
+    <color name="status_pendiente">#F59E0B</color>
+    <color name="status_en_proceso">#3B82F6</color>
+    <color name="status_finalizado">#10B981</color>
+
+    <!-- ── Prioridades (Retrocompatibilidad) ──────────────────── -->
+    <color name="prioridad_alta">#EF4444</color>
+    <color name="prioridad_media">#F59E0B</color>
+    <color name="prioridad_baja">#10B981</color>
+
+    <!-- ── Botones ────────────────────────────────────────────── -->
+    <color name="btn_iniciar">#4CAF50</color>
+    <color name="btn_actualizar">#E53935</color>
+    <color name="btn_escanear_bg">#43A047</color>
+    <color name="btn_ordenes_bg">#3949AB</color>
+
+
+    <!-- ── Botones Retrocompatibilidad (Nombres antiguos) ────── -->
+    <color name="btn_diagnostico">#1E40AF</color>
+    <color name="btn_reparacion">#F59E0B</color>
+    <color name="btn_refacciones">#8B5CF6</color>
+    <color name="btn_finalizar">#10B981</color>
+    <color name="btn_rechazar">#F44336</color>
+
+    <!-- ── Bottom nav ─────────────────────────────────────────── -->
+    <color name="bottom_nav_selected">#1E40AF</color>
+    <color name="bottom_nav_unselected">#94A3B8</color>
+
+    <!-- QR Scanner -->
+    <color name="scan_mask">#99000000</color>
+
+    <!-- Material Theme Defaults -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_ordenes_todas"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Todas las ordenes" />
+
+        <item
+            android:id="@+id/menu_ordenes_pendientes"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Pendientes" />
+
+        <item
+            android:id="@+id/menu_ordenes_proceso"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:title="En proceso" />
+
+        <item
+            android:id="@+id/menu_ordenes_finalizadas"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Finalizadas" />
+
+        <item
+            android:id="@+id/menu_ordenes_evidencias"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Evidencias" />
+    </group>
+
+</menu>

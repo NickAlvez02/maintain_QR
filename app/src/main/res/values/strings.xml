@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MaintainQR</string>
+    <string name="nav_ordenes">Mis Órdenes</string>
+    <string name="nav_qr">Escanear QR</string>
+    <string name="nav_perfil">Perfil</string>
+</resources>

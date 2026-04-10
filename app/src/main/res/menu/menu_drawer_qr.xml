@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_qr_escanear"
+            android:title="Escanear QR"
+            android:icon="@android:drawable/ic_menu_camera" />
+
+        <item
+            android:id="@+id/menu_qr_historial"
+            android:title="Historial QR"
+            android:icon="@android:drawable/ic_menu_recent_history" />
+
+        <item
+            android:id="@+id/menu_qr_buscar"
+            android:title="Buscar equipo"
+            android:icon="@android:drawable/ic_menu_search" />
+
+        <item
+            android:id="@+id/menu_qr_ultimos"
+            android:title="Últimos escaneos"
+            android:icon="@android:drawable/ic_menu_agenda" />
+    </group>
+
+</menu>

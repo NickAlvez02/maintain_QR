@@ -1,0 +1,5 @@
+-keep class com.techapp.models.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class retrofit2.** { *; }
+-keep class okhttp3.** { *; }

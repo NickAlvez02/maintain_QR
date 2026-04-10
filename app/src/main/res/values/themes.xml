@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TechApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/btn_refacciones</item>
+        <item name="colorSecondaryVariant">@color/btn_refacciones</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/bg_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Text fields outline color -->
+        <item name="colorControlNormal">@color/text_hint</item>
+        <item name="colorControlActivated">@color/accent</item>
+    </style>
+
+    <!-- Splash / Login: sin action bar -->
+    <style name="Theme.TechApp.Login" parent="Theme.TechApp">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+</resources>

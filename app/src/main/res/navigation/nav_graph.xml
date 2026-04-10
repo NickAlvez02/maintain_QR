@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <!-- ── Dashboard (MaintainQR) ──────────────────────────────────── -->
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.techapp.ui.dashboard.DashboardFragment"
+        android:label="MaintainQR"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_orden_detalle"
+            app:destination="@id/nav_orden_detalle" />
+        <action
+            android:id="@+id/action_dashboard_to_qr"
+            app:destination="@id/nav_qr" />
+        <action
+            android:id="@+id/action_dashboard_to_ordenes"
+            app:destination="@id/nav_ordenes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_resumen"
+        android:name="com.techapp.ui.home.ResumenFragment"
+        android:label="Resumen"
+        tools:layout="@layout/fragment_resumen" />
+
+    <fragment
+        android:id="@+id/nav_actividad_reciente"
+        android:name="com.techapp.ui.home.ActividadRecienteFragment"
+        android:label="Actividad reciente"
+        tools:layout="@layout/fragment_actividad_reciente" />
+
+    <fragment
+        android:id="@+id/nav_notificaciones"
+        android:name="com.techapp.ui.home.NotificacionesFragment"
+        android:label="Notificaciones"
+        tools:layout="@layout/fragment_notificaciones" />
+
+    <fragment
+        android:id="@+id/nav_centro_acciones"
+        android:name="com.techapp.ui.home.CentroAccionesFragment"
+        android:label="Centro de acciones"
+        tools:layout="@layout/fragment_centro_acciones" />
+
+    <fragment
+        android:id="@+id/nav_consultar_equipos"
+        android:name="com.techapp.ui.home.ConsultarEquiposFragment"
+        android:label="Consultar equipos"
+        tools:layout="@layout/fragment_consultar_equipos" />
+
+    <!-- ── Órdenes ─────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/nav_ordenes"
+        android:name="com.techapp.ui.orders.OrdenesFragment"
+        android:label="Mis Órdenes"
+        tools:layout="@layout/fragment_ordenes">
+
+        <action
+            android:id="@+id/action_ordenesFragment_to_ordenDetalleFragment"
+            app:destination="@id/nav_orden_detalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ordenes_evidencias"
+        android:name="com.techapp.ui.orders.OrdenesEvidenciasFragment"
+        android:label="Evidencias"
+        tools:layout="@layout/fragment_ordenes_evidencias" />
+
+    <fragment
+        android:id="@+id/nav_orden_detalle"
+        android:name="com.techapp.ui.orders.OrdenDetalleFragment"
+        android:label="Detalle de Orden"
+        tools:layout="@layout/fragment_orden_detalle">
+
+        <argument
+            android:name="ordenId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_ordenDetalleFragment_to_diagnosticoFragment"
+            app:destination="@id/nav_diagnostico" />
+        <action
+            android:id="@+id/action_ordenDetalleFragment_to_reparacionFragment"
+            app:destination="@id/nav_reparacion" />
+        <action
+            android:id="@+id/action_ordenDetalleFragment_to_refaccionesFragment"
+            app:destination="@id/nav_refacciones" />
+        <action
+            android:id="@+id/action_ordenDetalleFragment_to_finalizarFragment"
+            app:destination="@id/nav_finalizar" />
+        <action
+            android:id="@+id/action_ordenDetalleFragment_to_trabajoDetalleFragment"
+            app:destination="@id/nav_trabajo_detalle" />
+        <action
+            android:id="@+id/action_ordenDetalleFragment_to_registroEvidenciaFragment"
+            app:destination="@id/nav_registro_evidencia" />
+    </fragment>
+
+    <!-- ── QR Scanner ──────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/nav_qr"
+        android:name="com.techapp.ui.qr.QrFragment"
+        android:label="Escanear QR"
+        tools:layout="@layout/fragment_qr">
+
+        <action
+            android:id="@+id/action_qrFragment_to_ordenDetalleFragment"
+            app:destination="@id/nav_orden_detalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_qr_historial"
+        android:name="com.techapp.ui.qr.QrHistorialFragment"
+        android:label="Historial QR"
+        tools:layout="@layout/fragment_qr_historial" />
+
+    <fragment
+        android:id="@+id/nav_qr_buscar_equipo"
+        android:name="com.techapp.ui.qr.QrBuscarEquipoFragment"
+        android:label="Buscar equipo"
+        tools:layout="@layout/fragment_qr_buscar_equipo" />
+
+    <fragment
+        android:id="@+id/nav_qr_ultimos_escaneos"
+        android:name="com.techapp.ui.qr.QrUltimosEscaneosFragment"
+        android:label="Ultimos escaneos"
+        tools:layout="@layout/fragment_qr_ultimos_escaneos" />
+
+    <!-- ── Otros ─────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/nav_diagnostico"
+        android:name="com.techapp.ui.diagnosis.DiagnosticoFragment"
+        android:label="Diagnóstico"
+        tools:layout="@layout/fragment_diagnostico">
+        <argument android:name="ordenId" app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_reparacion"
+        android:name="com.techapp.ui.repair.ReparacionFragment"
+        android:label="Reparación"
+        tools:layout="@layout/fragment_reparacion">
+        <argument android:name="ordenId" app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_refacciones"
+        android:name="com.techapp.ui.parts.RefaccionesFragment"
+        android:label="Refacciones"
+        tools:layout="@layout/fragment_refacciones">
+        <argument android:name="ordenId" app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_finalizar"
+        android:name="com.techapp.ui.finish.FinalizarFragment"
+        android:label="Finalizar Servicio"
+        tools:layout="@layout/fragment_finalizar">
+        <argument android:name="ordenId" app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_trabajo_detalle"
+        android:name="com.techapp.ui.orders.TrabajoDetalleFragment"
+        android:label="Detalle de trabajo"
+        tools:layout="@layout/fragment_trabajo_detalle">
+        <argument android:name="ordenId" app:argType="integer" />
+        <argument android:name="trabajoId" app:argType="integer" />
+        <argument android:name="trabajoTitulo" app:argType="string" />
+        <argument android:name="trabajoDescripcion" app:argType="string" />
+        <argument android:name="trabajoTecnico" app:argType="string" />
+        <argument android:name="trabajoFecha" app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_registro_evidencia"
+        android:name="com.techapp.ui.orders.RegistroEvidenciaFragment"
+        android:label="Registro tecnico"
+        tools:layout="@layout/fragment_registro_evidencia">
+        <argument android:name="ordenId" app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.techapp.ui.profile.PerfilFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.techapp.ui.profile.ConfiguracionFragment"
+        android:label="Configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+
+</navigation>

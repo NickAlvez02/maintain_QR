@@ -1,0 +1,18 @@
+buildscript {
+    ext.kotlin_version = '2.0.21'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.8.5'
+        // Agregamos esto como classpath tradicional para mayor compatibilidad
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
